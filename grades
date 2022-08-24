@@ -1,0 +1,17 @@
+percent1=int(input("Enter your subject1: "))
+percent2=int(input("Enter your subject2: "))
+percent3=int(input("Enter your subject3: "))
+total=((percent1+percent2+percent3)/300)*100
+print(total)
+if total >= 90:
+    print("Grade A")
+elif total >=80:
+    print("Grade B")
+elif total >=70:
+    print("Grade C")   
+elif total >=60:
+    print("Grade D") 
+elif total >=40:
+    print("Grade E")
+else:
+    print("Grade F")                      
