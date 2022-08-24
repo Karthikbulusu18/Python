@@ -1,0 +1,6 @@
+p1=int(input("enter point x1: "))
+p2=int(input("enter point x2: "))
+p3=int(input("enter point y1: "))
+p4=int(input("enter point y2: "))
+d=((p2-p1)**2+(p3-p4)**2)**0.5
+print(f" the distance between {p1} and {p2} and {p3} and {p4} is {d}" )
