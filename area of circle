@@ -1,0 +1,7 @@
+def sum(n):
+    pi = 3.14
+    area=pi*n*n
+    return area
+radius=float(input("enter radius: "))
+ans = sum(radius)
+print(ans)
