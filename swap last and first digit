@@ -1,0 +1,18 @@
+def swap(n):
+    
+    sum=0
+    string1 = str(n)
+    l = [i for i in string1]
+        
+    temp = l[0]
+    l[0]=l[-1]
+    l[-1]=temp
+    string2="". join (l)
+    return int(string2)
+        
+          
+     
+    
+number = int(input("Enter a number: "))
+
+print(swap(number))
