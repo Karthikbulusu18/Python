@@ -1,0 +1,9 @@
+def sumOdd(n):
+    sum = 0
+    for i in range (1,n+1):
+        if(i%2!=0):
+            sum = sum + i
+    return sum
+number=int(input("Enter your number: "))
+answer=sumOdd(number)
+print(f"The sum of odd numbers between 1 and {number} is {answer}")
