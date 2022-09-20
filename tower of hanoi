@@ -1,0 +1,11 @@
+def towerHanoi(n,source,dest,middle):
+    if n<1:
+        print("Enter a positive number")
+    elif n==1:
+           print(f"Move disk {n} from {source} to {dest}")
+    else:
+        towerHanoi(n-1,source,middle,dest)
+        print(f"Move disk {n} from {source} to {dest}")
+        towerHanoi(n-1,middle,dest,source)
+n=int(input("Enter number of disks: "))
+towerHanoi(n,'a','c','b')
