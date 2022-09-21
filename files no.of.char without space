@@ -1,1 +1,9 @@
 
+f=open("hello.txt","r")
+data=f.read()
+lines=data.replace(" ","")
+
+print(len(lines))
+f.close()
+
+
