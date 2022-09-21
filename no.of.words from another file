@@ -1,0 +1,6 @@
+f=open("hello.txt","r")
+data=f.read()
+lines=data.split()
+
+print(len(lines))
+f.close()
