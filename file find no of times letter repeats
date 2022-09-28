@@ -1,0 +1,13 @@
+n=input("Enter a file name:")
+f=open(n,"w")
+f.write("hiiiiiiiiiiii guysss")
+f=open (n,"r")
+data=f.read().replace(" ","")
+d={}
+for ch in data:
+    if ch in d:
+        d[ch]+=1
+    else:
+        d[ch]=1
+print(d)
+f.close
