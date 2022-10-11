@@ -1,0 +1,7 @@
+s="bobob"
+c=0
+s1="bob"
+for i in range(len(s)):
+    if s[i:i+3]==s1:
+        c+=1
+print(c)
