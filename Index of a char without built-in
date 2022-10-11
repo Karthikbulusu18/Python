@@ -1,0 +1,5 @@
+s="srm"
+c="m"
+for i in range(len(s)):
+    if s[i]==c:
+        print(i)
