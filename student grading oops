@@ -1,0 +1,30 @@
+class Student:
+    def __init__(self,rollNumber,Name,Mid1,Mid2,Quiz):
+        
+        self.rollNumber=rollNumber
+        self.Name=Name
+        self.Mid1=Mid1
+        self.Mid2=Mid2
+        self.Quiz=Quiz
+        
+    def info(self):
+        print("My Roll Number is: ",self.rollNumber)
+        print("My Name is: ",self.Name)
+        print("My Mid1 marks is: ",self.Mid1)
+        print("My Mid2 marks is: ",self.Mid2)
+        print("My Quiz marks is: ",self.Quiz)
+        Total=self.Mid1+self.Mid2+self.Quiz
+        print("My Total marks is: ",Total)
+        if Total>=80:
+            print("Grade A")
+        elif Total<80 and Total >=60:
+            print("Grade B")
+        elif Total<60 and Total >=50:
+            print("Grade C")
+        else:
+            print("Grade D")
+s1=Student(675,"Karthik",24,24,48)
+s1.info()
+
+        
+        
