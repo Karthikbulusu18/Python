@@ -1,0 +1,22 @@
+class CAR():
+    def __init__(self,model,speed,price,NoofBul,Firingmethod):
+        self.model=model
+        self.speed=speed
+        self.price=price
+        self.NoofBul=NoofBul
+        self.Firingmethod=Firingmethod
+    
+class Firing_car(CAR):
+    def info(self):
+        print("Model is: ",self.model)
+        print("speed is: ",self.speed)
+        print("price is: ",self.price)
+        print("NoofBul is: ",self.NoofBul)
+        print("firing method is: ",self.Firingmethod)
+model=input("Enter model:")
+speed=input("Enter speed")
+price=input("Enter price")
+NoofBul=input("Enter no of bullets u want")
+Firingmethod=input("Enter Firing method: ") 
+C=Firing_car(model,speed,price,NoofBul,Firingmethod)
+C.info()    
