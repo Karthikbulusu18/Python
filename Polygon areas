@@ -1,0 +1,26 @@
+class polygon():
+    def __init__(self,l,b,h,s):
+        self.l=l
+        self.b=b
+        self.h=h
+        self.s=s
+        
+    
+class tri(polygon):
+    def __init__(self,l,b,h,s):
+        super().__init__(l,b,h,s)
+        print("area of tri is:",0.5*self.b*self.h)
+class rec(polygon):
+    def __init__(self,l,b,h,s):
+        super().__init__(l,b,h,s)
+        print("area of rec is: ",self.l*self.b)
+class sq(polygon):
+    def __init__(self,l,b,h,s):
+       super().__init__(l,b,h,s)
+       print("area of square: ",self.s*self.s)
+       
+            
+        
+t=tri(2,3,5,6)
+p=rec(2,3,5,8)
+i=sq(2,3,5,6)
